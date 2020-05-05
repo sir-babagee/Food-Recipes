@@ -38,7 +38,7 @@ const App = () => {
     return (
         <div className="App">
             <header>
-                <h1 style={{ color: "white" }}>Babagee's Food Recipe Site</h1>
+                <h1 className="header">Babagee's Food Recipe Site</h1>
             </header>
             <form onSubmit={getSearch} className="search-form">
                 <input
