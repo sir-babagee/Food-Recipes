@@ -8,6 +8,7 @@
     background: white;
     align-items: center;
     min-width: 40%;
+    max-width: 600px;
 }
 
 .image {
