@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .search-bar {
@@ -26,6 +28,12 @@
     border: none;
     padding: 10px 20px;
     color: white;
+    cursor: pointer;
+}
+
+.search-button:disabled {
+    background: rgb(114, 79, 79);
+    color: rgba(255, 255, 255, 0.555);
 }
 
 .recipes {

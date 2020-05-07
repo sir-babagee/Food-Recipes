@@ -35,6 +35,13 @@ const App = () => {
         setSearch(event.target.value);
     };
 
+    let but;
+    if (search.length > 0) {
+        but = false;
+    } else {
+        but = true;
+    }
+
     return (
         <div className="App">
             <header>
@@ -48,7 +55,7 @@ const App = () => {
                     placeholder="Search Food and Get Recipes"
                     onChange={updateSearch}
                 />
-                <button className="search-button" type="submit">
+                <button className="search-button" type="submit" disabled={but}>
                     Search
                 </button>
             </form>
